@@ -1,2 +1,3 @@
-﻿Console.WriteLine("C# 14 Playground");
-Console.WriteLine("================");
+﻿using CSharp14Playground;
+
+PlaygroundUtils.PrintHeader("C# 14 Playground", "=");
