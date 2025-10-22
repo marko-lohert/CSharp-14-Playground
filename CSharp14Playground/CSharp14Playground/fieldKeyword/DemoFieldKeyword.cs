@@ -10,6 +10,25 @@ public class DemoFieldKeyword
         Console.WriteLine($"Temp: {TempCelsius} °C");
     }
 
+    // Before C# 14
+    /*
+    private double _TempCelsius;
+    public double TempCelsius
+    {
+        get => _TempCelsius;
+        set
+        {
+            if (value < AbsMinTemp)
+                _TempCelsius = -273.15;
+            else if (value > PlanckTemperature)
+                _TempCelsius = PlanckTemperature;
+            else
+                _TempCelsius = value;
+        }
+    }
+    */
+    
+    // C# 14
     public double TempCelsius
     {
         get => field;
