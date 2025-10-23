@@ -31,6 +31,9 @@ public static class DemoNullConditionalAssignment
 
         // C# 14
         customers?[0].FirstName = "John"; // Check that customers is not null.
-        customers?[0]?.FirstName = "John"; // Check both that customers is not null and that it contains an item at index 0.
+
+        // Check both that customers is not null and that it contains an item at index 0.
+        if (customers?.Length > 0)
+            customers[0].FirstName = "John";
     }
 }
