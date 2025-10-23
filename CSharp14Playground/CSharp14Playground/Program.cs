@@ -1,6 +1,7 @@
 ﻿using CSharp14Playground;
 using CSharp14Playground.ExtensionMembers;
 using CSharp14Playground.fieldKeyword;
+using CSharp14Playground.ModifiersOnSimpleLambdaParameters;
 using CSharp14Playground.nameofUnboundGenericTypes;
 using CSharp14Playground.NullConditionalAssignment;
 using CSharp14Playground.PartialEventsAndConstructors;
@@ -17,3 +18,6 @@ DemoFieldKeyword fieldKeywordDemo = new();
 fieldKeywordDemo.StartDemo();
 
 DemoPartialEventsAndConstructors.StartDemo();
+
+DemoModifiersOnSimpleLambdaParameters demoLambda = new();
+demoLambda.StartDemo();
